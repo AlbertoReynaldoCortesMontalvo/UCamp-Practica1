@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+}
+
+
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 40px;
+    padding: 15px;
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: #2a2a2a;
+    text-decoration: none;
+    margin: 10px;
+    padding: 4px;
+    transition: color .4s;
+}
+
+.menu a:hover {
+    color: #ccc;
+}
+
+.demo {
+    display: flex;
+    align-items: center;    
+}
+
+.demo a {
+    color: #fff;
+    padding: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    transition: transform .3s;
+}
+
+.demo a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.seccion-1 {
+    background-color: #f3fafd;
+}
+
+.jumbotron {
+display: flex;
+justify-content: space-between;
+padding: 40px;
+}
+
+.jumbotron-text {
+    color: #2a2a2a;
+}
+
+.jumbotron-text h1 {
+    font-size: 3rem;
+    padding: 10px;
+    line-height: 2.3rem;
+}
+
+.jumbotron-text p {
+    color: #00506b;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 1rem;
+}
+
+.form-email {
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    height: 30px;
+    width: 70%;
+    border-radius: 8px;
+}
+
+input[type=email] {
+    border: 1px solid #f2f2f2;
+    padding: 12px 5px;
+    color: #ccc;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 1px solid #ccc;
+}
+
+.button {
+    height: 40px;
+    margin-left: 6px;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: #2a2a2a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.terminos {
+    padding: 10px;
+    color: #00506b;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.terminos:hover {
+    color: #ccc;
+}
+
+.jumbotron-img {
+    width: 950px;
+    margin-top: 30px;
+}
+
+.jumbotron-img img {
+    width: 100%;
+    box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
+}
+
+.seccion-2 {
+
+}
+
+.titulo-notas {
+    margin-top: 30px;
+}
+
+.titulo-notas h1 {
+    text-align: center;
+}
