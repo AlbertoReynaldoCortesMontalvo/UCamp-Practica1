@@ -349,9 +349,6 @@ input[type=email]:focus {
     .footer-menu {
         display: block!important;
     }
-    .redes-sociales {
-        margin-left: 180px!important;
-    }
 }
 
 footer {
@@ -384,8 +381,8 @@ footer {
 }
 
 .redes-sociales {
-    margin: 0 auto;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .redes-sociales a {
