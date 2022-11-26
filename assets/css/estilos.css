@@ -347,6 +347,7 @@ footer {
 .nav-footer {
     display: flex;
     justify-content: space-evenly;
+    margin: 0 auto;
 }
 
 .catalogo, .soporte {
@@ -363,13 +364,14 @@ footer {
 }
 
 .redes-sociales {
-    margin-top: 30px;
+    margin: 0 auto;
     
 }
 
 .redes-sociales a {
     color: #7a7a7a;
     margin: 10px;
+    margin-top: 30px;
     text-decoration: none;
 }
 
