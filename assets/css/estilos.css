@@ -264,16 +264,20 @@ input[type=email]:focus {
 @media (min-width: 500px) and (max-width: 1400px) {
     .notas {
         grid-template-columns: repeat(1,1fr);
-
     }
 
     .card {
         width: 80%!important;
     }
-    .card-body {
-        padding: 10px!important;
-    }
 }
+
+@media (min-width: 300px) and (max-width: 800px) {
+.card-body {
+    padding: 10px!important;
+}
+}
+
+
 
 
 
