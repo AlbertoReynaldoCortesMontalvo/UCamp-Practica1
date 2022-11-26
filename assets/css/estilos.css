@@ -181,13 +181,14 @@ input[type=email]:focus {
 
 .jumbotron-img {
     max-width: 600px;
-    margin-top: 30px;
+    margin: 30 auto;
 }
 
 .jumbotron-img img {
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
     width: 100%;
+    
     box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
 }
 
