@@ -110,6 +110,7 @@ text-align: justify!important;
     .jumbotron-text {
         padding: 10px 20px!important;
         text-align: center!important;
+        margin: 30px auto!important;
     }
 
     .jumbotron {
@@ -155,13 +156,17 @@ text-align: justify!important;
     }
 
     .email {
-        width: 100%!important;
+        width: 80%!important;
         margin: 10px;
     }
 
     .button {
         width: 50%;
-        margin: 30px;
+        margin: 30px!important;
+    }
+
+    .terminos {
+        margin: 30px auto;
     }
 }
 
@@ -208,6 +213,7 @@ input[type=email]:focus {
     color: #00506b;
     text-decoration: none;
     transition: color .3s;
+    margin: 20px auto;
 }
 
 .terminos:hover {
