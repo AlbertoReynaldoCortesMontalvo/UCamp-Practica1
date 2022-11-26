@@ -10,12 +10,11 @@ body {
 
 .contenedor {
     margin: 0 auto;
-    width: 80%;
+    max-width: 90%;
 }
 
 header {
-    border-bottom: 1px solid #f2f2f2;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    background-color: #f3fafd;
 }
 
 
@@ -66,7 +65,7 @@ header {
     padding: 10px;
     margin-right: 20px;
     text-decoration: none;
-    background-color: #2a2a2a;
+    background-color: #f34f36;
     border-radius: 4px;
     transition: transform .3s;
 }
@@ -76,6 +75,7 @@ header {
     transform: scale(1.1);
 }
 
+/* Jumbotron */
 .seccion-1 {
     background-color: #f3fafd;
 }
@@ -86,21 +86,33 @@ justify-content: space-between;
 padding: 40px;
 }
 
+@media (min-width: 300px) and (max-width:1000px){
+    .jumbotron {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .jumbotron-text h1 {
+        font-size: 1.4rem;
+        padding: 5px;
+        padding: 10px!important;
+    }
+
+}
+
 .jumbotron-text {
     color: #2a2a2a;
+    padding: 10px 50px;
 }
 
 .jumbotron-text h1 {
     font-size: 3rem;
-    padding: 10px;
-    line-height: 2.3rem;
+    color: #288ba8;
 }
 
 .jumbotron-text p {
     color: #00506b;
-    padding: 10px;
-    padding-right: 30px;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .form-email {
@@ -132,17 +144,18 @@ input[type=email]:focus {
 }
 
 .button {
-    height: 40px;
     margin-left: 6px;
     padding: 10px;
-    border-radius: 11px;
-    background-color: #2a2a2a;
+    border-radius: 5px;
+    background-color: #f34f36;
+    border-style: none;
     color: #fff;
     cursor: pointer;
 }
 
 .terminos {
     padding: 10px;
+    text-align: center;
     color: #00506b;
     text-decoration: none;
     transition: color .3s;
@@ -153,23 +166,156 @@ input[type=email]:focus {
 }
 
 .jumbotron-img {
-    width: 950px;
+    max-width: 600px;
     margin-top: 30px;
 }
 
 .jumbotron-img img {
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
     width: 100%;
     box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
 }
 
-.seccion-2 {
-
-}
-
+/*---------------- Blog  ------------ */
 .titulo-notas {
-    margin-top: 30px;
+    margin: 50px auto;
+    font-size: 1.875rem;
+    color: #322c2e;
+    font-weight: 800;
+    text-align: center;
 }
 
-.titulo-notas h1 {
+.notas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 10px 60px;
+}
+
+@media (min-width: 300px) and (max-width:1400px) {
+    .notas {
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
+
+    }
+    .card {
+        width: 300px;
+    }
+}
+
+.card {
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 11px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+}
+
+.card-img {
+    width: 350px;
+    height: 200px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.card-body {
+    padding: 15px 20px;
+}
+
+.card-title {
+    color: #00506b;
+    font-size: 1.3rem;
+}
+
+.card-info {
+    color: #3a3a3a;
+    font-size: 1rem;
+}
+
+.autor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nombre {
+    margin: 9px;
+    color: #a9a9a9;
+}
+
+.tiempo {
+    color: #a9a9c9;
+    margin: 9px;
+}
+
+
+/* Adicionales */
+
+.seccion-3 {
+    background-color: #f3fafd;
+}
+
+@media (min-width: 300px) and (max-width:1000px) {
+    .adicionales {
+        display: block!important;
+        padding: 0 auto!important;
+    }
+
+    .adicional-titulo {
+        padding: 0!important;
+    }
+
+    .ad-titulo {
+        padding: 10px!important;
+    }
+
+    .adicional-info {
+        margin: 5px auto!important;
+        padding: 2px!important;
+
+    }
+}
+
+.adicionales {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+    margin-top: 40px;
+    color: #00506b;
+}
+
+.adicional-titulo {
+    margin: 0 auto;
+    padding: 10px 50px;
+}
+
+.ad-titulo {
     text-align: center;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.adicional-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.adicional-info {
+    margin: 30px auto;
+    padding: 10px 50px;
+}
+
+.item-add {
+    margin: 60px auto;
+    padding: 15px;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.item-add span {
+    color: #288ba8;
 }
