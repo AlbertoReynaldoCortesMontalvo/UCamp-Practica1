@@ -271,7 +271,7 @@ input[type=email]:focus {
         width: 80%!important;
     }
     .card-body {
-        padding: 20px!important;
+        padding: 10px!important;
     }
 }
 
